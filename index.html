@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" type="text/javascript" defer></script>
+    <title>Sorting Number Machine</title>
+</head>
+<body>
+    <fieldset id="controls">
+        <legend>Sorting Numbers Machine</legend>
+        <div id="inputs">
+            <div style="display:flex; margin:3px">
+                <input type="number" id="max-input" style= 'width:63px'><p style="margin-left: 13px">Max Value</p>
+            </div>
+            <div style="display:flex; margin:3px">
+                <input type="number" id="result-input" style= 'width:63px'><p style="margin-left: 13px">Results Count</p>
+            </div>
+            <div style="display:flex; margin:3px">
+                <input type="number" id="times-input" style= 'width:63px'><p style="margin-left: 13px">Times Sorting</p>
+            </div>
+            <div style="display:flex; margin:3px">
+                <input type="checkbox" id="dice-mode"><p style="margin-left: 3px">Dice Mode</p>
+                <input type="checkbox" id="show-sum"><p style="margin-left: 3px">Show Sum</p>
+            </div>
+        </div>
+        
+        <div style="display:flex; justify-content: space-around;">
+            <button id="clear-btn" onclick="clearResults()">CLEAR</button>
+            <button id="sort-btn" onclick="showResults()">SORT</button>
+        </div>
+    </fieldset>
+    <div id="board"></div>
+</body>
+</html>
